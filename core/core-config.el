@@ -21,4 +21,11 @@
 
 (defvar config-keep-backups nil)
 
+;; font settings
+(defvar config-font-family "Hasklig")
+(defvar config-font-height 140)
+
+;; enable only if you are using emacs-mac
+(defvar config-enable-ligatures t)
+
 (provide 'core-config)

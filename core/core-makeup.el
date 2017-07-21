@@ -31,8 +31,8 @@
 
   ;; font
   (set-face-attribute 'default nil
-		      :family "Hasklig"
-		      :height 140)
+		      :family config-font-family
+		      :height config-font-height)
   (set-frame-parameter nil 'fullscreen 'fullboth)
 
   ;; theme
