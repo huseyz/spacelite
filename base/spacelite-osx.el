@@ -12,6 +12,7 @@
   (setq mac-command-modifier 'super)
   (global-set-key (kbd "s-c") 'evil-yank)
   (global-set-key (kbd "s-w") 'evil-delete-buffer)
-  (global-set-key (kbd "s-v") 'yank))
+  (global-set-key (kbd "s-v") 'yank)
+  (when config-enable-ligatures (mac-auto-operator-composition-mode)))
 
 (provide 'spacelite-osx)
