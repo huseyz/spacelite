@@ -8,8 +8,10 @@
 ;;; License: GPLv3
 
 (require 'spacelite-scala)
+(require 'spacelite-markdown)
 
 (defun spacelite/init-langs ()
-  (spacelite/init-scala))
+  (spacelite/init-scala)
+  (spacelite/init-markdown))
 
 (provide 'spacelite-langs)

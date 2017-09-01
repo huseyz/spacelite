@@ -27,7 +27,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (deft highlight-parentheses esup centered-cursor-mode linum-relative exec-path-from-shell zerodark-theme which-key evil bind-map use-package)))
+    (google-this markdown-mode deft highlight-parentheses esup centered-cursor-mode linum-relative exec-path-from-shell zerodark-theme which-key evil bind-map use-package)))
  '(with-editor-emacsclient-executable "/usr/local/bin/emacsclient"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
