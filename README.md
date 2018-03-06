@@ -12,7 +12,7 @@ Spacelite is just a minimal evil + emacs configuration with following:
 - `magit` with `evil-magit`
 - some simple `MacOs` keybindings (only enabled in OSX/emacs)
 - `which-key` for shortcut help
-- `zero-dark` theme
+- `solarized-dark` theme
 - `highlight-parentheses`, `evil-anzu`, `restart-emacs` etc.
 - `scala` support with cutting edge `ensime` (you can(should if you are not using ensime snapshot builds already) disable this in `init.el`)
 
@@ -23,8 +23,6 @@ Note: This "thing" is my personal configuration that I use at work and personal 
 # Installation
 
 `git clone https://github.com/hzenginx/spacelite ~/.emacs.d`
-
-The theme Spacelite using(zerodark) uses `all-the-icons` package. So you need to call(`M-x` a.k.a. `SPC SPC`) `all-the-icons-install-fonts` function once in first run to get icons working.
 
 # Why
 There is [spacemacs](https://github.com/syl20bnr/spacemacs) as we all know. But for me it comes with too much unnecessary packages. Also I don't like the concept of layers as it doesn't feels flexible enough.

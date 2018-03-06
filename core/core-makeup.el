@@ -35,11 +35,7 @@
 		      :height config-font-height)
   (set-frame-parameter nil 'fullscreen 'fullboth)
 
-  ;; theme
-  ;; This required some fonts to be downloaded, run `all-the-icons-install-fonts` manually
-  (use-package
-    zerodark-theme
-    :config (zerodark-setup-modeline-format))
+  (spacelite//init-theme)
 
   ;; window numbers
   (use-package
@@ -70,5 +66,15 @@
     highlight-parentheses
     :diminish 'highlight-parentheses-mode
     :config (add-hook 'prog-mode-hook #'highlight-parentheses-mode)))
+
+(defun spacelite//init-theme ()
+  (use-package
+    solarized-theme :config (load-theme 'solarized-dark t))
+
+  ;; face attributes for helm
+  (eval-after-load 'helm
+    (lambda ()
+      (set-face-attribute
+        'helm-selection nil :background "#268bd2" :underline nil :foreground "black"))))
 
 (provide 'core-makeup)
