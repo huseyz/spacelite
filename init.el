@@ -19,3 +19,7 @@
 (use-package exec-path-from-shell :defer t :config
 	(when (memq window-system '(mac ns x))
 	  (exec-path-from-shell-initialize)))
+
+(setq custom-file "~/.emacs.d/custom.el")
+(unless (file-exists-p custom-file) (write-region "" nil custom-file))
+(load custom-file)
