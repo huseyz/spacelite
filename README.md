@@ -30,8 +30,8 @@ Also this can be a start point for people who wants to start with `emacs` and `e
 
 # Screenshot
 
-![Scala](http://i.imgur.com/tAL3Gce.png)
-![ELisp](http://i.imgur.com/cx7tWpf.png)
+![Scala](https://i.imgur.com/V5tKGrZ.png)
+![ELisp](https://i.imgur.com/WOjP8qX.png)
 
 # Contribution
 
