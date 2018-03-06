@@ -31,7 +31,7 @@
     (window-width . 0.6) 
     (window-height . 0.4)))
 
-(defun spacelite/display-helm-window (buffer) 
+(defun spacelite/display-helm-window (buffer &optional resume)
   "Display the Helm window always at bottom and full width."
   (let ((display-buffer-alist (list helm-display-buffer-regexp))) 
     (helm-default-display-buffer buffer)))
