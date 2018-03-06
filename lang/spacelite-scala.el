@@ -11,16 +11,13 @@
   (use-package
     ensime
     :defer t
-    :diminish 'yas-minor-mode
-    :pin melpa)
+    :diminish 'yas-minor-mode)
   (use-package
     sbt-mode
-    :defer t
-    :pin melpa)
+    :defer t)
   (use-package
     scala-mode
-    :defer t
-    :pin melpa)
+    :defer t)
   (setq ensime-startup-notification 'nil)
   (setq ensime-startup-snapshot-notification 'nil)
   (setq ensime-use-helm t)
