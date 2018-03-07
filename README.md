@@ -15,6 +15,7 @@ Spacelite is just a minimal evil + emacs configuration with following:
 - `solarized-dark` theme
 - `highlight-parentheses`, `evil-anzu`, `restart-emacs` etc.
 - `scala` support with cutting edge `ensime` (you can(should if you are not using ensime snapshot builds already) disable this in `init.el`)
+- a ligh but useful modeline with [spaceline](https://github.com/TheBB/spaceline).
 
 All of above with proper(for me) evil(-like) key bindings.
 
@@ -43,7 +44,7 @@ If you use this configuration and want to improve just open a issue and/or a pul
  - Spacemacs like toggles
  - Optimization on package loading. There may be some packages needs to be deferred.
  - Generic goto defination like Spacemacs. (I want to be able to use this configuration for multiple programming languages at the same time.)
- - Better powerline like [spaceline](https://github.com/TheBB/spaceline).
+ - ~~Spaceline~~
 
 # License
 The license is GPLv3.

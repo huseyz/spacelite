@@ -35,10 +35,10 @@
     evil-iedit-state 
     :defer t 
     :commands (evil-iedit-state evil-iedit-state/iedit-mode) 
-    :init (progn 
-	    (setq iedit-current-symbol-default t iedit-only-at-symbol-boundaries t
-		  iedit-toggle-key-default nil) 
-	    (spacelite/set-leader-keys "se" 'evil-iedit-state/iedit-mode)) 
-    :config (define-key evil-iedit-state-map (kbd config-leader-key) spacelite-default-map)))
+    :init
+    (setq iedit-current-symbol-default t iedit-only-at-symbol-boundaries t
+	  iedit-toggle-key-default nil) 
+    (spacelite/set-leader-keys "se" 'evil-iedit-state/iedit-mode) 
+    :config (define-key evil-iedit-state-map (kbd config-leader-key) spacelite-default-map))) 
 
 (provide 'spacelite-evil)

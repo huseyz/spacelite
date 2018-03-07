@@ -36,12 +36,11 @@
   (set-frame-parameter nil 'fullscreen 'fullboth)
 
   (spacelite//init-theme)
+  (spacelite//init-spaceline)
 
   ;; window numbers
-  (use-package
-    winum)
+  (use-package winum)
   (winum-mode)
-  (setq winum-auto-setup-mode-line nil)
 
   ;; evil-anzu for improving search result rendering
   (use-package
@@ -76,5 +75,35 @@
     (lambda ()
       (set-face-attribute
         'helm-selection nil :background "#268bd2" :underline nil :foreground "black"))))
+
+(defun spacelite//init-spaceline ()
+  (setq-default
+   powerline-height 24
+   powerline-default-separator 'wave)
+
+  ;; prevent winum to insert windows numbers to mode line
+  (setq winum-auto-setup-mode-line nil)
+  ;; prevent anzu to matched numbers to mode line
+  (setq anzu-cons-mode-line-p nil)
+
+  (use-package spaceline :ensure t)
+
+  (use-package spaceline-config :ensure spaceline
+     :config
+     (spaceline-helm-mode 1)
+     (spaceline-emacs-theme))
+
+  (spaceline-compile "spacelite" '(
+				   (buffer-modified)
+				   (window-number :seperator "|")
+				   (anzu :priority 4)
+				   (major-mode)
+				   (process :when active)
+				   (minor-modes :when active)
+				   (version-control :when active)
+				   ) '(buffer-position :seperator "|"))
+  (setq-default mode-line-format '("%e" (:eval (spaceline-ml-spacelite))))
+
+  )
 
 (provide 'core-makeup)
