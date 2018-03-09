@@ -9,6 +9,7 @@
 
 (defun spacelite/init-emacs () 
   (setq initial-major-mode config-scratch-mode) 
+  (setq initial-scratch-message nil)
   (use-package 
     restart-emacs) 
   (use-package 

@@ -92,18 +92,16 @@
      :config
      (spaceline-helm-mode 1)
      (spaceline-emacs-theme))
-
+  (setq spaceline-highlight-face-func 'spaceline-highlight-face-evil-state)
   (spaceline-compile "spacelite" '(
+				   (window-number :face highlight-face)
 				   (buffer-modified)
-				   (window-number :seperator "|")
 				   (anzu :priority 4)
 				   (major-mode)
 				   (process :when active)
 				   (minor-modes :when active)
 				   (version-control :when active)
-				   ) '(buffer-position :seperator "|"))
-  (setq-default mode-line-format '("%e" (:eval (spaceline-ml-spacelite))))
-
-  )
+				   ) '(buffer-position buffer-id :seperator "|"))
+  (setq-default mode-line-format '("%e" (:eval (spaceline-ml-spacelite)))))
 
 (provide 'core-makeup)
