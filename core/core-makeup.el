@@ -96,6 +96,7 @@
   (spaceline-compile "spacelite" '(
 				   (window-number :face highlight-face)
 				   (buffer-modified)
+				   (line-column)
 				   (anzu :priority 4)
 				   (major-mode)
 				   (process :when active)
