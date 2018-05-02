@@ -15,6 +15,7 @@
 (require 'spacelite-emacs)
 (require 'spacelite-git)
 (require 'spacelite-osx)
+(require 'spacelite-shell)
 
 (defun spacelite/init-base ()
   (spacelite/init-evil-base)
@@ -24,6 +25,7 @@
   (spacelite/init-projectile)
   (spacelite/init-emacs)
   (spacelite/init-git)
+  (spacelite/init-shell)
   (when (eq system-type 'darwin)
     (spacelite/init-osx)))
 

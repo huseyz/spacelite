@@ -13,7 +13,7 @@ Spacelite is just a minimal evil + emacs configuration with following:
 - some simple `MacOs` keybindings (only enabled in OSX/emacs)
 - `which-key` for shortcut help
 - `solarized-dark` theme
-- `highlight-parentheses`, `evil-anzu`, `restart-emacs` etc.
+- `highlight-parentheses`, `evil-anzu`, `restart-emacs`, `emacs-shell` etc.
 - `scala` support with cutting edge `ensime` (you can(should if you are not using ensime snapshot builds already) disable this in `init.el`)
 - a ligh but useful modeline with [spaceline](https://github.com/TheBB/spaceline).
 

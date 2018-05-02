@@ -69,7 +69,8 @@
 		   ("q" "quit")
 		   ("g" "git")
 		   ("j" "jump")
-		   ("w" "window")))
+		   ("w" "window")
+		   ("n" "note")))
   (mapc (lambda (x)
 	  (apply #'spacelite/declare-prefix x)) prefixes))
 
