@@ -37,8 +37,7 @@
     (helm-default-display-buffer buffer)))
 
 (defun spacelite/helm-init-keybindings () 
-  (spacelite/set-leader-keys "<SPC>" 'helm-M-x "bb" 'helm-buffers-list "ff" 'helm-find-files "ji"
-    'helm-imenu)
+  (spacelite/set-leader-keys "<SPC>" 'helm-M-x "bb" 'helm-buffers-list "ff" 'helm-find-files "ji" 'helm-imenu "ry" 'helm-show-kill-ring)
   ;; tab to provide completation
   (define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action) 
   (define-key helm-map (kbd "C-j") 'helm-next-line) 
